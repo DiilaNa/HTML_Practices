@@ -6,9 +6,19 @@
 </head>
 <body>
 
-<img src="Images/tiger.jpg" title="image of a tiger" alt="Tiger Image ">
+
 <!-- alt is used to send a message to the user when the image resource is missing.-->
 <!--title shows a description message when the cursor is over the image-->
+<!--<img src="Images/tiger.jpg" title="image of a tiger" alt="Tiger Image " width="230">-->
+
+<picture><!-- device walata gelapena vidiahata width ek height ek decide kr gnnw-->
+    <source srcset="Images/ButterFly.webp" type=" image/webp" media="(max-width:1000px)">
+    <source srcset="Images/tiger.jpg" type=" image/webp" media="(max-width:800px)">
+    <source srcset="Images/FIGMA-DESIGNS.ico" type=" image/webp" media="(max-width:300px)">
+    <img src="Images/tiger.jpg" title="image of a tiger" alt="Tiger Image ">
+
+</picture>
+
 
 </body>
 </html>
