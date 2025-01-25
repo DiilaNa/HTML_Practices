@@ -12,33 +12,118 @@
 <!--    type = text use for texts/ number use for numbers-->
 
     <input type="text" placeholder="Enter your name"><br><br> <!--br is a void element which breaks the line-->
-    <input type="number" placeholder="Choose your number"><br><br>
+    <input type="number" placeholder="Choose your number">
     <input type="password" placeholder="Enter your password">
-    <input type="email" placeholder="Enter your email"><br><br>
+    <input type="email" placeholder="Enter your email">
 <!--    <input type="month" placeholder="Enter your month"><br><br>-->
-    <input type="search" placeholder="search"><br><br>
-
-    <input type="tel" placeholder="Enter your phone number"><br><br>
-    <input type="checkbox">I agree to the terms and conditions</input><br><br>
+    <input type="search" placeholder="search">
+    <input type="tel" placeholder="Enter your phone number">
+    <input type="checkbox">I agree to the terms and conditions</input>
     <input type="radio"> radio button </input>
-    <input type="range"> range </input> <br> <br>
-    <input type="color" placeholder="Enter your color"><br><br>
-    <input type="date" max="2025-02-04" min="2025-01-20" placeholder="Enter your date of birth"><br><br>
-    <input type="datetime-local" placeholder="Enter your date"><br><br>
-
-    <input type="time" placeholder="Enter your time"><br><br>
-    <input type="month" placeholder="Enter your month"><br><br>
-    <input type="week" placeholder="Enter your week"><br><br>
-    <input type="file" placeholder="Enter your file"><br><br>
+    <input type="range"> range </input>
+    <input type="color" placeholder="Enter your color">
+    <input type="date" max="2025-02-04" min="2025-01-20" placeholder="Enter your date of birth">
+    <input type="datetime-local" placeholder="Enter your date">
+    <input type="time" placeholder="Enter your time">
+    <input type="month" placeholder="Enter your month">
+    <input type="week" placeholder="Enter your week">
+    <input type="file" placeholder="Enter your file">
   <!--  <input type="image" src="Assests/Images/tiger.jpg"> <br><br>-->
-    <input type="button" value="click me"> <br><br>
+    <input type="button" value="click me">
     <input type="submit"> <!--collects entered data from input values and send the data to the location we need-->
-    <input type="reset" value="Reset"> <br><br> <!--clean the data inputs-->
-    <input type="hidden">
+    <input type="reset" value="Reset">  <!--clean the data inputs-->
+    <input type="hidden"> <br><br><br>
     <!--above button, submit and reset input types are not in use in modern developments , instead of that use BUTTON tag-->
     </form>
 
+<form action="http://localhost:8080/form" method="get" ><!-- action attribute connects the front end with backend-->
+    <div>
+        <label for = "first-name" >First Name</label>
+        <input type="text" id = "first-name" placeholder="Enter your first name"
+        name="firstname">
+    </div>
+    <br>
+    <div>
+        <label for="last-name">Last Name</label>
+        <input type="text" id = "last-name" placeholder="Enter your last name"
+        name="lastname">
+    </div>
+    <br>
+    <div>
+        <label for="address">Address</label> <br>
+        <textarea id="address" placeholder="Enter your address" rows="10" cols="50"
+        name="Address"> </textarea>
+    </div>
+
+    <div>
+        <label for="subjectlabel"> select your subject  </label>
+        <select name="subject" id="subjectlabel">
+                <option value="1">JAVA</option>
+                <option value="2">HTML</option>
+                <option value="3">CSS</option>
+                <option value="4">JavaScript</option>
+            </select>
+    </div>
+
+    <br><br>
+    <fieldset>
+        <legend>Gender</legend> <!--title of the fieldset-->
+        <input type="radio" id="status1" name="status" value="MARRIED"> <label for="status1">Married</label><br>
+        <input type="radio" id="status2" name="status" value="HAPPY"> <label for="status2">Single</label>
+    </fieldset>
+    <!--name wala thiyena value ek eka samana wenne dekemma ekama details ekk gnna nisa , ekama name eken tama radio butto ek deselect krl aai select krnn puluwn wenne-->
+
+        <label for="Country">Country></label><br>
+        <input type="text" id="Country" list="Country-List">
+
+        <datalist id="Country-List">
+            <option value="India"></option>
+            <option value="USA"></option>
+            <option value="Canada"></option>
+            <option value="Brazil"></option>
+        </datalist>
+
+    <!-------------------OPTION GROUP---------->
+    <br> <br>
+    <label for="Country-List12"> SELECT YOUR COUNTRY</label>
+    <select id = "Country-List12">
+        <optgroup label="SOUTH AMERICA">
+            <option value="Brazil">Brazil</option>
+            <option value="USA">USA</option>
+            <option value="ARGENTINA">Canada</option>
+            <option value="COLOMBIA">USA</option>
+        </optgroup>
+
+        <optgroup label="ASIA">
+            <option value="INDIA">Canada</option>
+            <option value="CHINA">Brazil</option>
+            <option value="RUSSIA">USA</option>
+        </optgroup>
 
 
-</body>
+    </select> <br>
+
+
+
+    <!--  name attribute is used while collecting data-->
+    <!--    <input type="submit">
+        <input type="reset">
+        <input type="button" value="click me">-->
+
+    <!--use button instead of using input element -->
+    <div>
+        <button type="button">click me</button>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </div>
+
+  </form>
+
+<form>
+    <output>
+
+    </output>
+</form>
+
+ </body>
 </html>
