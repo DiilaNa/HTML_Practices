@@ -6,7 +6,8 @@
 
     <style>
         h1{ /*h1 is a type selectors*/
-            color: red;
+            font-family: "Cambria Math";
+           /* color: red;*/
         }
         p{ /*p is a type selectors*/
 
@@ -25,10 +26,37 @@
         font-size: 25px;
         /*color: red;*/
         }
-
+        /*attribute Selector*/
         [name]{
             background-color: cyan;
         }
+        [name="attribute_selector"]{
+            color: brown;
+        }
+        [href^="www"]{ /* ^ = check the words inside the double quotes are available, if yes css are added to them*/
+            color: yellow;
+        }
+        [href$="lk"]{
+            color: red;  /*$ mark will add css to the elements which end with "lk"*/
+        }
+        [href*="lk"]{
+            color: green;
+        }
+        [href*="js"]{  /*add css to anywhere which has the words inside the quotations*/
+            background-color: yellow;
+            font-size: 125px;
+            font-weight: bold;
+        }
+        [href~="Facebook"]{ /*check attribute type with given word*/
+            background-color: pink;
+            color: pink;
+
+        }
+
+        p[name] {
+            background-color: green;
+        }
+
 
     </style>
 </head>
@@ -72,10 +100,18 @@ background-color - can only add background color-->
 
 <!--ATTRIBUTE SELECTOR-->
 
-<a href="https://www.w3schools.com" name="Attribute Selector">W3 SCHOOL</a>
+<a href="https://www.w3schools.com" name>W3 SCHOOL</a>
 <a href=Css.html>CSS SELECTORS</a>
-<a href="http://www.wikipedia.com " name="Attribute Selector">Wikipedia</a>
+<a href="http://www.wikipedia.com " name="attribute_selector">Wikipedia</a>
 <a href="www.Youtube.com">You Tube</a>
+<a href="www.google.com">Google</a>
+<a href="www.hbh Facebook bh.com">Facebook</a>
+<a href="www.twitter.com">Twitter</a>
+<a href="ijse.lk">IJSE</a>
+<a href="jste.lk">JAVA</a>
+<a href="jste.mkd">MKD</a>
+
+<p name="s">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 
 
 
