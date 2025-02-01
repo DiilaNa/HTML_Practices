@@ -7,9 +7,12 @@
 /*        #topic1{
             color: red;
         }*/
-        section > h1{
+    /*    section > h1{ !*child combinator*!
             color: blue;
-        }
+        }*/
+    section h1{ /*Decendant combinator*/
+        color: red;
+    }
     </style>
 </head>
 <body>
@@ -21,7 +24,10 @@ General Sibilings Combinator-select the element which is located after given fir
 <h1>Software Engineering</h1>
 <section>
     <h1 id="topic1">Software Engineering Module 01</h1>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae distinctio magnam velit!</div>
+    <p>
+        Lorem ipsum dolor sit amet,
+        <h1>consectetur adipisicing elit.</h1>
+    Beatae distinctio magnam velit!</p>
 </section>
 
 </body>
