@@ -49,12 +49,37 @@
         li:nth-child(3n+1){
             color: hotpink;
         }*/
-        h1::before{
+/*        h1::before{
             content: '💛💛';
         }
         h1::after{
-            content:'💚💚';
+            content:'💚🎈';
+        }*/
+        h1::first-letter {
+            color: red;
         }
+        p::first-line {
+          color: blue;
+        }
+        p::selection {
+            background-color: aqua;
+        }
+        #list ::marker{
+            content: '🏆';
+        }
+        input::placeholder {
+            color: orange;
+        }
+        button{
+            background-color: blue;
+        }
+        input::file-selector-button{
+            background-color: red;
+        }
+        input::file-selector-button:hover{
+            background-color: green;
+        }
+
     </style>
 </head>
 <body>
@@ -62,7 +87,14 @@
 <!--HAS A ONE COALAN : / select the state of the element(locations and status)-->
 
 <!--status-->
-<h1>HELLO WORLD</h1>
+<h1>WELCOME TO SRI LANKA</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias asperiores consectetur
+    consequatur cum deleniti dicta dolor dolores eius enim eveniet harum illo in labore modi odio optio quae
+    quaerat qui quibusdam quis quos recusandae saepe sit sunt tempora temporibus ullam unde velit, voluptates.
+    Autem corporis delectus itaque tempore velit veniam vitae! Blanditiis cum dolore, dolorum ducimus iusto
+    numquam perferendis tempore. A aliquid aperiam architecto asperiores assumenda dolor dolores ea earum eligendi
+    enim ex fuga fugiat impedit, ipsa iure iusto labore laboriosam libero mollitia nihil odit quae sit ut vel vitae
+    voluptate voluptatem. Doloremque in iste reiciendis repellendus tempora tempore.</p>
 
 <a href="https://www.google.com/">Google</a>
 <a href="https://www.youtube.com/">You Tube</a>
@@ -70,6 +102,12 @@
 <input type="text">
 
 <!--locations-->
+
+
+<!--PSEUDO element SELECTOR-->
+<!--HAS TWO COALAN :: / select a part of the element-->
+
+
 <ol>
     <li>JAVA</li>
     <li>GO</li>
@@ -84,12 +122,17 @@
     <li>Ruby_3</li>
     <li>C#</li>
 </ol>
+<ol id="list">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ol>
+
+<input type="text" placeholder="Enter your name">
+<input type="file">
+<button>Submit</button>
 
 
 
-
-
-<!--PSEUDO element SELECTOR-->
-<!--HAS TWO COALAN :: / select a part of the element-->
 </body>
 </html>
