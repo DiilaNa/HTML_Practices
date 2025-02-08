@@ -1,0 +1,14 @@
+button{
+    background: maroon;
+}
+.c1{
+    background: darkblue;
+}
+
+section>p{
+    color: aqua;
+}
+section>.c2{
+    color: brown;
+
+}
