@@ -13,6 +13,14 @@
     section h1{ /*Decendant combinator*/
         color: red;
     }
+    h2+h3{ /*Adjacent Combinator*/
+        background-color: blue; /*h2 ekata pahalin athi h3ta apply krnna*/
+    }
+    h2~h3{ /*General Sibilings Combinator*/
+        /*h2ta pahalin thiina hema h3 ekkatama apply krnw*/
+        background-color: darkorange;
+    }
+
     </style>
 </head>
 <body>
@@ -29,6 +37,41 @@ General Sibilings Combinator-select the element which is located after given fir
         <h1>consectetur adipisicing elit.</h1>
     Beatae distinctio magnam velit!</p>
 </section>
+
+<h2>Hello H2</h2>
+<p>Lorem ipsum dolor sit amet</p>
+<h3>Hello H3</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, id!</p>
+<h3>Hello H3</h3>
+
+<ol>
+    <li>Asia</li>
+        <ul>
+            <li>Sri Lanka</li>
+            <li>India
+            <a href="inida.com">India.com</a>
+            <a href="India.gov">India.gov</a></li>
+            <li>Japan</li>
+            <li>Korea</li>
+        </ul>
+    <li>Europe
+        <ol>
+            <li>UK</li>
+            <li>
+                Germany
+            </li>
+            <li>
+                France
+                <ol>
+                    <li>Health Sector</li>
+                    <h1>Welcome to Health Sector</h1>
+                    <h4>Hello World</h4>
+                </ol>
+            </li>
+        </ol>
+
+
+</ol>
 
 </body>
 </html>
