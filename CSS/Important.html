@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #myId{ /*ID selector// 0,1,0,0*/
+            color: blue;
+        }
+        div{ /*type selector specificity value// 0,0,,0,1*/
+            color: red!important; /*add color red avoiding specificity value*/
+        }
+    </style>
+</head>
+<body>
+<div id="myId">
+    Hello World!
+</div>
+</body>
+</html>
