@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Asssts/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta >
+    <style>
+        #header{
+            background-color: lightyellow;
+            position: relative;
+            height: 100px;
+        }
+        #logo{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 100px;
+        }
+        #navigation{
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+
+        }
+        #button{
+            position: absolute;
+            margin: auto;
+            height: fit-content;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            display: none;
+        }
+        @media all and (max-width: 500px) {
+            #button{
+                display: block;
+            }
+            #navigation{
+                display: none;
+            }
+        }
+        @media all and (max-width: 800px) and (min-width: 400px) {
+            h1{
+                color: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<header id="header">
+        <img id="logo" src="Asssts/ijseLogo.png" alt="pic">
+    <nav id="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Career</a>
+        <a href="#">Contact</a>
+    </nav>
+    <button id="button">Menu</button>
+
+
+</header>
+<h1>hello</h1>
+
+</body>
+</html>
