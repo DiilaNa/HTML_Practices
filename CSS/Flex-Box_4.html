@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section{
+            width: 1000px;
+            height: 500px;
+            display: flex;
+            border: 3px solid black;
+
+        }
+        section > div{
+            width: 100px;
+            height: 100px;
+            background-color: #f31111;
+            border: 3px solid #4a0101;
+           /* align-self: self-start;
+            align-self: flex-end;*/
+           /* align-self: center;*/
+        }
+        section > div:first-child{
+            align-self: center;
+        }
+        section > div:nth-child(2){
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
