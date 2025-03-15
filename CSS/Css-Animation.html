@@ -11,14 +11,14 @@
             background-color: lightblue;
             border: 5px solid blue;
             animation-name: my_rotate;
-            animation-duration: 2s;
+            animation-duration: 4s;
             /*animation-delay: 4s;*/
             /*animation-timing-function: ease;*/
             animation-timing-function: ease-out;
             animation-iteration-count: infinite;
             animation-direction: alternate-reverse;
         }
-        @keyframes my_rotate {
+       /* @keyframes my_rotate {
             from{
                 transform: rotate(0deg);
                 background-color: lightblue;
@@ -30,7 +30,20 @@
                 margin-top: 300px;
                 border-radius: 100%
 
-            }
+            }*/
+
+            @keyframes my_rotate{
+                0%{
+                    background-color: #0bd30b;
+                }25%{
+                    background-color: #bf0bd3;
+                }50%{
+                    background-color: #c39626;
+                }75%{
+                background-color: #ff1138;
+                }100%{
+                background-color: #000000;
+                }
 
         }
   </style>
