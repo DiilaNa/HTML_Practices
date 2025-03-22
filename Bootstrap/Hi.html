@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Style/bootstrapCSS.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="card m-3 p-1 shadow-lg" style="width: 25rem">
+        <div class="card-body">
+            <form>
+                <h5 class="header-text">Students</h5>
+                <div class="mb-3">
+                    <label for="fistName" class="form-label">First Name</label>
+                    <input type="email" class="form-control" id="fistName" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName">
+                </div>
+                <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">ProGrams</label>
+                    <select id="disabledSelect" class="form-select">
+                        <option>GDSE</option>
+                        <option>CMJD</option>
+                    </select>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                       After O/level
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        After A/level
+                    </label>
+                </div>
+
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-secondary">Update</button>
+                <button type="button" class="btn btn-success">Delete</button>
+                <button type="button" class="btn btn-danger">Reset</button>
+            </form>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Program</th>
+            <th scope="col">Qualification</th>
+            <th scope="col">Address</th>
+
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
